@@ -1,0 +1,12 @@
+2021-12-27 15:20:38.946  INFO 8932 --- [restartedMain] Day5EmployeePayrollAppProgramApplication : Starting Day5EmployeePayrollAppProgramApplication using Java 17.0.1 on HP with PID 8932 (G:\Day5_EmployeePayrollAppProgram\target\classes started by HP WORLD in G:\Day5_EmployeePayrollAppProgram)
+2021-12-27 15:20:38.998 DEBUG 8932 --- [restartedMain] Day5EmployeePayrollAppProgramApplication : Running with Spring Boot v2.6.2, Spring v5.3.14
+2021-12-27 15:20:38.999  INFO 8932 --- [restartedMain] Day5EmployeePayrollAppProgramApplication : No active profile set, falling back to default profiles: default
+2021-12-27 15:20:43.020  WARN 8932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 15:20:44.121  INFO 8932 --- [restartedMain] Day5EmployeePayrollAppProgramApplication : Started Day5EmployeePayrollAppProgramApplication in 6.288 seconds (JVM running for 131.786)
+2021-12-27 15:20:44.130  INFO 8932 --- [restartedMain] Day5EmployeePayrollAppProgramApplication : EmployeePayRoll App  started
+2021-12-27 15:20:45.842  INFO 8932 --- [restartedMain] Day5EmployeePayrollAppProgramApplication : Starting Day5EmployeePayrollAppProgramApplication using Java 17.0.1 on HP with PID 8932 (G:\Day5_EmployeePayrollAppProgram\target\classes started by HP WORLD in G:\Day5_EmployeePayrollAppProgram)
+2021-12-27 15:20:45.843 DEBUG 8932 --- [restartedMain] Day5EmployeePayrollAppProgramApplication : Running with Spring Boot v2.6.2, Spring v5.3.14
+2021-12-27 15:20:45.844  INFO 8932 --- [restartedMain] Day5EmployeePayrollAppProgramApplication : No active profile set, falling back to default profiles: default
+2021-12-27 15:20:47.754  WARN 8932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-27 15:20:48.570  INFO 8932 --- [restartedMain] Day5EmployeePayrollAppProgramApplication : Started Day5EmployeePayrollAppProgramApplication in 2.853 seconds (JVM running for 136.237)
+2021-12-27 15:20:48.578  INFO 8932 --- [restartedMain] Day5EmployeePayrollAppProgramApplication : EmployeePayRoll App  started
