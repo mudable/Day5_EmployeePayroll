@@ -1,44 +1,36 @@
 package com.bridgelabz.employeepayrollapp.model;
 
+import java.time.LocalDate;
+import java.util.List;
+
 import com.bridgelabz.employeepayrollapp.dto.EmployeePayrollDTO;
 
-public  class EmployeePayrollData {
-	private int employeeId;
-	private String name;
-	private long salary;
+import lombok.Data;
 
-	public EmployeePayrollData() {
-	}
 
-	public EmployeePayrollData(int empId, EmployeePayrollDTO empPayrollDTO) {
+@Data
+public class EmployeePayrollData {
+    private int employeeId;
+    private String name;
+    private long salary;
+    private String gender;
+    private LocalDate startDate;
+    private String note;
+    private String profilePic;
+    private List<String> departments;
 
-		this.employeeId = empId;
-		this.name = empPayrollDTO.name;
-		this.salary = empPayrollDTO.salary;
-	}
+    public EmployeePayrollData() {
+    }
 
-	public int getEmployeeId() {
-		return employeeId;
-	}
+    public EmployeePayrollData(int employeeId, EmployeePayrollDTO employeePayrollDTO) {
+        this.employeeId = employeeId;
+        this.name = employeePayrollDTO.name;
+        this.salary = employeePayrollDTO.salary;
+        this.gender = employeePayrollDTO.gender;
+        this.note = employeePayrollDTO.note;
+        this.startDate = employeePayrollDTO.startDate;
+        this.profilePic = employeePayrollDTO.profilePic;
+        this.departments = employeePayrollDTO.departments;
 
-	public void setEmployeeId(int employeeId) {
-		this.employeeId = employeeId;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public long getSalary() {
-		return salary;
-	}
-
-	public void setSalary(long salary) {
-		this.salary = salary;
-	}
-
+    }
 }
