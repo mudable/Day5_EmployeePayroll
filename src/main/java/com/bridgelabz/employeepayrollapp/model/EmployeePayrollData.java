@@ -37,14 +37,15 @@ public class EmployeePayrollData {
 	private String note;
 	@Column(name = "profile_pic")
 	private String profilePic;
-
+	private String emailId;
+	private String password;
 	@ElementCollection
 	@CollectionTable(name = "employee_department", joinColumns = @JoinColumn(name = "id"))
 	@Column(name = "departments")
 	private List<String> departments;
 
 	public EmployeePayrollData() {
-		
+
 	}
 
 	public EmployeePayrollData(EmployeePayrollDTO employeePayrollDTO) {
@@ -59,6 +60,8 @@ public class EmployeePayrollData {
 		this.startDate = employeePayrollDTO.startDate;
 		this.profilePic = employeePayrollDTO.profilePic;
 		this.departments = employeePayrollDTO.departments;
+		this.emailId = employeePayrollDTO.emailId;
+		this.password = employeePayrollDTO.password;
 
 	}
 }

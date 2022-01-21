@@ -2,19 +2,27 @@ package com.bridgelabz.employeepayrollapp.service;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
+import org.springframework.stereotype.Service;
+
 import com.bridgelabz.employeepayrollapp.dto.EmployeePayrollDTO;
+import com.bridgelabz.employeepayrollapp.dto.ResponseDTO;
 import com.bridgelabz.employeepayrollapp.model.EmployeePayrollData;
 
+@Service
 public interface IEmploeePayrollService {
 
-	List<EmployeePayrollData> getEmployeePayrollData();
+//	List<EmployeePayrollData> getEmployeesPayrollDataByDepartment(String department);
 
-	EmployeePayrollData getEmployeePayrollDataById(int empId);
+	ResponseDTO createEmployeePayrollData(@Valid EmployeePayrollDTO empPayrollDTO);
 
-	EmployeePayrollData createEmployeePayrollData(EmployeePayrollDTO empPayrollDTO);
+	ResponseDTO deleteEmployeeData(String token);
 
-	EmployeePayrollData updateEmployeePayrollData(int empId, EmployeePayrollDTO empPayrollDTO);
+	EmployeePayrollData getEmployeePayrollDataById(String token);
 
-	void deleteEmployeePayrollData(int empId);
+	ResponseDTO updateEmployeePayrollData(String token, EmployeePayrollDTO empPayrollDTO);
+
+	List<EmployeePayrollData> getallAllEmployee();
 
 }
